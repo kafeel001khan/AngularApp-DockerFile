@@ -8,4 +8,4 @@ RUN ./node_modules/@angular/cli/bin/ng build
 
 FROM nginx
 RUN rm /usr/share/nginx/html/*
-COPY --from=node /opt/dist/AgGrid/. /usr/share/nginx/html/
+COPY --from=node /opt/dist/. /usr/share/nginx/html/
